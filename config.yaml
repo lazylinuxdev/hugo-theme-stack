@@ -112,8 +112,8 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage:
+            - type: search
 
     opengraph:
         twitter:
@@ -141,3 +141,26 @@ params:
             enabled: true
         content:
             enabled: true
+
+
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 0
+          params:
+              icon: home
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/CaiJimmy/hugo-theme-stack
+          params:
+              icon: brand-github
+
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com
+          params:
+              icon: brand-twitter
